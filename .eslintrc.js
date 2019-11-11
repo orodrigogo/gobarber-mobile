@@ -33,4 +33,11 @@ module.exports = {
     ],
     'import/prefer-default-export': 'off', // para garantir que import/export sem ser apenas o i/e default
   },
+  settings: {
+    "import/resolver": {
+      "babel-plugin-root-import":{
+        rootPathSuffix: "src"
+      }
+    }
+  }
 };
