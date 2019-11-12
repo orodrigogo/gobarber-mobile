@@ -44,6 +44,9 @@ export function* signIn({ payload }) {
     // Armazenando no axios, no cabecalho das requisicoes o token do usuário.
     api.defaults.headers.Authorization = `Bearer ${token}`;
 
+    // Para colocar um delay para conseguir visualizar o loading do botão.
+    // yield delay(3000);
+
     // Chama a Action signInSucess da action do auth. E usamos o yield para aguardar o retorno.
     yield put(signInSucess(token, user));
 
@@ -67,7 +70,6 @@ export function* signUp({ payload }) {
       name,
       email,
       password,
-      provider: true,
     });
 
     // history.push('/');
