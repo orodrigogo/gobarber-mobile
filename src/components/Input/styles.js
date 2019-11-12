@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.View1`
+export const Container = styled.View`
   padding: 0 15px;
   height: 46px;
   background: rgba(0, 0, 0, 0.1);
