@@ -9,10 +9,12 @@ import {
   FormInput,
   Separator,
   SubmitButton,
+  LogoutButton,
 } from './styles';
 
 import Background from '~/components/Background';
 import { updateProfileRequest } from '~/store/modules/user/actions';
+import { signOut } from '~/store/modules/auth/actions';
 
 export default function Profile() {
   const dispatch = useDispatch();
@@ -39,6 +41,10 @@ export default function Profile() {
         confirmPassword,
       })
     );
+  }
+
+  async function handleLogout() {
+    dispatch(signOut());
   }
 
   useEffect(() => {
@@ -113,6 +119,7 @@ export default function Profile() {
           />
 
           <SubmitButton onPress={handleSubmit}>Atualizar perfil</SubmitButton>
+          <LogoutButton onPress={handleLogout}>Sair do GoBarber</LogoutButton>
         </Form>
       </Container>
     </Background>
