@@ -26,19 +26,22 @@ export default (signIn = false) =>
           {
             Dashboard,
             New: {
-              screen: createStackNavigator({
-                SelectProvider,
-                SelectDateTime,
-                Confirm,
-              }, {
-                defaultNavigationOptions: {
-                  headerTransparent: true,
-                  headerTintColor: '#FFF',
-                  headerLeftContainerStyle: {
-                    marginLeft: 20,
-                  }
+              screen: createStackNavigator(
+                {
+                  SelectProvider,
+                  SelectDateTime,
+                  Confirm,
+                },
+                {
+                  defaultNavigationOptions: {
+                    headerTransparent: true,
+                    headerTintColor: '#FFF',
+                    headerLeftContainerStyle: {
+                      marginLeft: 20,
+                    },
+                  },
                 }
-              }),
+              ),
               navigationOptions: {
                 tabBarVisible: false,
                 tabBarLabel: 'Agendar',
@@ -54,6 +57,7 @@ export default (signIn = false) =>
             Profile,
           },
           {
+            resetOnBlur: true, // toda vez que sai da rota reseta.
             tabBarOptions: {
               activeTintColor: '#FFF',
               inactiveTintColor: 'rgba(255,255,255,0.7)',
