@@ -1,7 +1,7 @@
-### Documentação do Gympoint Web - Frontend
+### Documentação do GoBarber
 
-Versão web destinada aos instrutores da academia. Os alunos utilizam a versão mobile.
+Versão mobile destinada aos clientes de barbearias. Os instrutores utilizam a versão web.
 
 # Demonstração da Interface
 
-![Alt Text](demogym.gif)
+![Alt Text](gobarbermobiledemo.gif)
