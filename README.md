@@ -1,7 +1,8 @@
-### Documentação do GoBarber
+<h3 align="center">
+  GoBarber for Clients
+</h3>
 
-Versão mobile destinada aos clientes de barbearias. Os instrutores utilizam a versão web.
+Versão mobile destinada aos clientes de barbearias. Por meio do aplicativo, clientes podem agendar horários na barbearia e acompanhar o status de sua reserva.
 
-# Demonstração da Interface
 
 ![Alt Text](gobarbermobiledemo.gif)
